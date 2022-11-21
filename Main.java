@@ -3,7 +3,7 @@ import java.util.*;
 class Main {
   public static void main(String[] args) {
     Map<Integer, String> topMovies = new HashMap<>();
-    Map<Integer, String> employees = new HashMap<>();
+    Map<String, Integer> employees = new HashMap<>();
 
     topMovies.put(1, "The Shawshank Redemption");
     topMovies.put(2, "The Godfather");
@@ -19,12 +19,13 @@ class Main {
     log(topMovies.entrySet());
 
     /* Section 3 */
-    employees.put(345, "Deer Park");
-    employees.put(234, "Homer Simpson");
-    employees.put(445, "Gordon Freeman");
-    employees.put(543, "Nikola Tesla");
+    employees.put("Deer Park", 345);
+    employees.put("Homer Simpson", 234);
+    employees.put("Gordon Freeman", 445);
+    employees.put("Nikola Tesla", 543);
 
     /* Section 5 */
+    log(employees.get("Gordon Freeman"));
 
     /* Section 6 */
     log(employees.keySet());
